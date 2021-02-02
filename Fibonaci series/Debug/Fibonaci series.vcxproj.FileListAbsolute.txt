@@ -1,2 +1,0 @@
-C:\Users\lenovo\OneDrive\سطح المكتب\projects c++\Fibonaci series\Debug\Fibonaci series.exe
-C:\Users\lenovo\OneDrive\سطح المكتب\projects c++\Fibonaci series\Debug\Fibonaci series.pdb
