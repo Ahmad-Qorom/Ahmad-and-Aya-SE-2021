@@ -18,5 +18,11 @@ int main()
 		}
 		cout << next << " ";
 	}
+
+
+
+
+
+
 	return 0;
 }
