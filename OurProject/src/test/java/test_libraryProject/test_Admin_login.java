@@ -1,19 +1,18 @@
 package test_libraryProject;
-
 import static org.junit.Assert.assertTrue;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import library_project.isCorrectPassword;
+import library_project.productionCode;
 
 public class test_Admin_login
 {
 	
 	private boolean password;
-	private isCorrectPassword z;
+	private productionCode z;
 	
-	public test_Admin_login(isCorrectPassword z) 
+	public test_Admin_login(productionCode z) 
 	{
 		this.z = z;
 	}
@@ -21,7 +20,7 @@ public class test_Admin_login
 	@Given("Admin not log in")
 	public void admin_not_log_in() 
 	{
-	    System.out.println("not log i yet");
+	    System.out.println("not logging yet");
 	}
 
 	@When("Admin assert valid credentials")
