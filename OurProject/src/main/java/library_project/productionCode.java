@@ -39,16 +39,5 @@ public class productionCode
 	    else 
 	    	return true;
 	}
-	
-	/*public void printBook()
-	{
-		System.out.println("number of books in library = "+library.size());
-		obj=library.get(0);
-		
-		
-		
-		System.out.println("Book Name     : "+obj.Title);
-		System.out.println("Book ISBN     : "+obj.ISBN);
-		System.out.println("Book Signature: "+obj.Signature);
-	}*/
+
 }
