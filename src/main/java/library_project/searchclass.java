@@ -1,29 +1,29 @@
-package libraryproject;
+package library_project;
 
 import java.util.ArrayList;
 
 public class searchclass {
 
-	int i=0;
-		public static book b1=new book("Software Engineering","Ian Sommerville","somm2011","2011111111");
-		public static book b2=new book("Software","Ian","somm2011","2011222222");
-		 ArrayList<book> A =new ArrayList<book>();
+	
+		public static insertToList b1=new insertToList("Software Engineering","Ian Sommerville","somm2011","2011111111");
+		public static insertToList b2=new insertToList("Software","Ian","somm2011","2011222222");
+		 ArrayList<insertToList> library =new ArrayList<insertToList>();
 	
 	
 			private String flagetitel="not found";
 			
 			public String find(String sub,String subj) {
-				A.add(b1);
-				A.add(b2);
+				library.add(b1);
+				library.add(b2);
 				if(subj=="titel") {
 				
-				for(book b:A)
+				for(insertToList b:library)
 				{
 					
-				if(	b.titel.contains(sub)) {
+				if(	b.Titel.contains(sub)) {
 					
 					flagetitel="found";
-					System.out.print(b.author+" "+b.titel+" "+b.signature+" "+b.ISBN);
+					System.out.print(b.Author+" "+b.Titel+" "+b.Signature+" "+b.ISBN);
 					
 					System.out.print("\n");
 					}
@@ -38,13 +38,13 @@ public class searchclass {
 				
 				else if(subj=="author") {
 					
-					for(book b:A)
+					for(insertToList b:library)
 					{
 						
-					if(	b.author.contains(sub)) {
+					if(	b.Author.contains(sub)) {
 						
 						flagetitel="found";
-						System.out.print(b.author+" "+b.titel+" "+b.signature+" "+b.ISBN);
+						System.out.print(b.Author+" "+b.Titel+" "+b.Signature+" "+b.ISBN);
 						
 						System.out.print("\n");
 						}
@@ -60,13 +60,13 @@ public class searchclass {
 					if(sub.length()!=10) {
 						return flagetitel;
 					}
-					for(book b:A)
+					for(insertToList b:library)
 					{
 						
 					if(	b.ISBN.contains(sub)) {
 						
 						flagetitel="found";
-						System.out.print(b.author+" "+b.titel+" "+b.signature+" "+b.ISBN);
+						System.out.print(b.Author+" "+b.Titel+" "+b.Signature+" "+b.ISBN);
 						
 						System.out.print("\n");
 						}
@@ -80,13 +80,13 @@ public class searchclass {
 				
 				else if(subj=="signature") {
 					
-					for(book b:A)
+					for(insertToList b:library)
 					{
 						
-					if(	b.signature.contains(sub)) {
+					if(	b.Signature.contains(sub)) {
 						
 						flagetitel="found";
-						System.out.print(b.author+" "+b.titel+" "+b.signature+" "+b.ISBN);
+						System.out.print(b.Author+" "+b.Titel+" "+b.Signature+" "+b.ISBN);
 						
 						System.out.print("\n");
 						}
@@ -98,15 +98,15 @@ public class searchclass {
 					return flagetitel;
 					}
 				
-		else if(subj=="subject") {
+					else if(subj=="subject") {
 					
-					for(book b:A)
+					for(insertToList b:library)
 					{
 						
-					if(	b.titel.contains(sub)) {
+					if(	b.Titel.contains(sub)) {
 						
 						flagetitel="found";
-						System.out.print(b.author+" "+b.titel+" "+b.signature+" "+b.ISBN);
+						System.out.print(b.Author+" "+b.Titel+" "+b.Signature+" "+b.ISBN);
 						
 						System.out.print("\n");
 						}
@@ -117,19 +117,19 @@ public class searchclass {
 				
 					return flagetitel;
 					}
-		else if(subj=="substring") {
-			
-			for(book b:A)
-			{
+					else if(subj=="substring") {
 				
-			if(	b.titel.contains(sub)) {
-				
-				flagetitel="found";
-				System.out.print(b.author+" "+b.titel+" "+b.signature+" "+b.ISBN);
-				
-				System.out.print("\n");
-				}
-				}
+						for(insertToList b:library)
+					{
+						
+					if(	b.Titel.contains(sub)) {
+						
+						flagetitel="found";
+						System.out.print(b.Author+" "+b.Titel+" "+b.Signature+" "+b.ISBN);
+						
+						System.out.print("\n");
+						}
+						}
 				
 			
 				

@@ -4,7 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import junit.framework.Assert;
-import libraryproject.searchclass;
+import library_project.searchclass;
 
 public class searchbook {
 	public	String subject,substring;
@@ -159,7 +159,7 @@ public void i_complet_action_by_subject_boolean_parse_boolean(String string) {
 
 @Then("i dont have result for a subject")
 public void i_dont_have_result_for_a_subject() {
-	Assert.assertTrue(str6.equalsIgnoreCase("found"));
+	Assert.assertTrue(str6.equalsIgnoreCase("not found"));
 }
 
 
