@@ -33,8 +33,8 @@ Then i have result about search when logged in
 
 
 
-Scenario: Searching for a subject 
-Given i want to search by subject 
+Scenario: Searching for a subject when no books match 
+Given i want to search by subject when no books match 
 When i complet action by subject Boolean.parseBoolean("true")
 Then i dont have result for a subject
 

@@ -143,8 +143,9 @@ public void i_have_result_about_search_when_logged_in() {
 
 ////////////////////////////////////////////////////////////////////
 
-@Given("i want to search by subject")
-public void i_want_to_search_by_subject() {
+@Given("i want to search by subject when no books match")
+public void i_want_to_search_by_subject_when_no_books_match()
+ {
 	subject="subject";
 }
 

@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith (Cucumber.class)
-@CucumberOptions(plugin= "html: a/cucumber.html", features="use_case",glue= {"test_libraryProject"}
+@CucumberOptions(plugin= "html: html/cucumber.html", features="use_cases",glue= {"test_libraryProject"}
 
 )
 public class testcase {
