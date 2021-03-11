@@ -8,7 +8,10 @@ public class insertToList {
 	String Signature=null;
 	String ISBN=null;
 	
+	//insert to array list
 	
+	
+
 	
 	public insertToList(String titel, String author, String signature,String ISBN) {
      this.Titel=titel;
@@ -17,7 +20,5 @@ public class insertToList {
      this.ISBN=ISBN;
 		
 	}
-	public void main() {
-		
-	}
+	
 }
